@@ -2,9 +2,25 @@
   <nav>
     <router-link to="/">Home</router-link> |
     <router-link to="/about">About</router-link>
+    <router-link to="/fetch">Fetch</router-link>
+    <router-link to="/sign">SignUp</router-link>
+
+    
   </nav>
+  <signUp/>
   <router-view/>
 </template>
+
+<script>
+  import SignUp from '../components/SignUp.vue'
+  export default {
+      name: 'App',
+      components: {
+          SignUp
+      }
+  }
+  </script>
+ 
 
 <style>
 #app {
